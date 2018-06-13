@@ -1,0 +1,27 @@
+{
+  "name": "node-nightwatch",
+  "version": "1.0.0",
+  "description": "NightWatch.js end to end tests",
+  "private": false,
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "npm": ">=8"
+  },
+  "repository": {
+  },
+  "author": "Mike Dupree",
+  "license": "ISC",
+  "dependencies": {
+    "chromedriver": "^2.34.0",
+    "nightwatch": "^0.9.19",
+    "selenium-server": "^3.8.1"
+  },
+  "devDependencies": {
+  }
+}
