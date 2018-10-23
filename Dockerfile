@@ -34,7 +34,7 @@ RUN apt-get install -yqq ca-certificates
 # ----------------
 # Install Java 8 (needed by selenium)
 # ----------------
-RUN apt-get install -yqq openjdk-8-jre-headless
+RUN apt-get install -yqq openjdk-11-jre-headless
 
 # ----------------
 # Install Node 8
