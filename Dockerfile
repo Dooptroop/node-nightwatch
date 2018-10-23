@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:18.04
 
 # ----------------
 # Prevent a lot of complaining from apt
@@ -48,6 +48,7 @@ RUN ln -s /usr/local/bin/node /usr/local/bin/nodejs
 # ----------------
 # Install Chrome ... and add about 600 MB to our image :-(
 # ----------------
+RUN apt-get -yqq install gnupg2
 RUN wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | apt-key add -
 RUN echo "deb https://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list
 RUN apt-get update -yq
